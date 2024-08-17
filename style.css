@@ -35,7 +35,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  max-width: 99.2rem;
+  max-width: 130rem;
   margin: 0 auto;
 }
 
@@ -140,5 +140,24 @@ body {
   margin-top: 1rem;
 }
 
-@media screen {
+@media screen and (max-width: 992px) {
+  .pricing_card {
+    flex-basis: 35rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .pricing {
+    justify-content: center;
+  }
+  .pricing_card {
+    flex-basis: 36rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pricing {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
