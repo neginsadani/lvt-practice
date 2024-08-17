@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("./FONT/PoppinsLatin-Regular.otf") format("opentype"),
+    url("./FONT/PoppinsLatin-Regular.ttf") format("TrueType");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+:root {
+  --body-bg-color: #eeeeee;
+  --white-color: #fff;
+  --dark-blue-color: #1a237e;
+  --light-blue-color: #1976d2;
+  --gray-color: #666;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins;
+  background-color: var(--body-bg-color);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  max-width: 99.2rem;
+  margin: 0 auto;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.pricing_card {
+  background-color: var(--white-color);
+  width: 30rem;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 2rem;
+}
+
+.paricing_title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.pricing_price {
+  color: var(--dark-blue-color);
+  font-size: 5.8rem;
+  font-weight: 900;
+}
+
+.pricing_servise {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.pricing_list {
+  list-style: none;
+}
+
+.pricing_item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pricing_item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.pricing_icon {
+  width: 2rem;
+  height: 2rem;
+}
+.pricing_servise-content {
+  color: var(--gray-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.pricing_link {
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--light-blue-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0.8rem 1rem;
+  align-self: stretch;
+  text-align: center;
+  border-radius: 3rem;
+}
+
+.pricing_blue {
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+}
+
+.pricing_blue .pricing_price {
+  color: var(--white-color);
+}
+
+.pricing_blue .pricing_servise-content {
+  color: var(--white-color);
+}
+
+.pricing_title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pricing_lable {
+  background-color: rgb(255, 225, 0);
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3rem;
+  margin-top: 1rem;
+}
+
+@media screen {
+}
